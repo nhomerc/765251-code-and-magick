@@ -20,9 +20,9 @@ var getListWizards = function (count) {
   var wizards = [];
   for (var i = 0; i < count; i++) {
     wizards[i] = {
-      name: Wizard.NAME[getRandomNumber(8)] + ' ' + Wizard.SURNAME[getRandomNumber(8)],
-      coatColor: Wizard.COAT_COLOR[getRandomNumber(6)],
-      eyesColor: Wizard.EYE_COLOR[getRandomNumber(5)]
+      name: Wizard.NAME[getRandomNumber(Wizard.NAME.length)] + ' ' + Wizard.SURNAME[getRandomNumber(Wizard.SURNAME.length)],
+      coatColor: Wizard.COAT_COLOR[getRandomNumber(Wizard.COAT_COLOR.length)],
+      eyesColor: Wizard.EYE_COLOR[getRandomNumber(Wizard.EYE_COLOR.length)]
     };
   }
 
